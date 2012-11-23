@@ -57,10 +57,11 @@ module Ckeditor
   end
   
   def self.assets
-    @@assets ||= begin
-      Utils.select_assets("vendor/assets/javascripts/ckeditor", "vendor/assets/javascripts") +
-      Utils.select_assets("app/assets/javascripts/ckeditor/plugins", "app/assets/javascripts")
-    end
+    nil # don't compile assets
+    # @@assets ||= begin
+    #   Utils.select_assets("vendor/assets/javascripts/ckeditor", "vendor/assets/javascripts") +
+    #   Utils.select_assets("app/assets/javascripts/ckeditor/plugins", "app/assets/javascripts")
+    # end
   end
   
   def self.picture_model
